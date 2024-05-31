@@ -5,8 +5,19 @@
 - Click the left mouse button, and the project will start playing automatically. Click again to pause.
   
 The flowing lines will change with the music: when the treble is strong, the lines will become longer; when the bass is strong, the lines will become thicker. Additionally, the overall volume will affect the visuals, making the background brighter or flickering as the volume changes, and the number of flowing lines will also vary with the volume.
+
+*when the bass is strong*
+![pic1](readmeImages/Bass.png
+
+*when the treble is strong*
+![pic1](readmeImages/Treble.png
+
+*when both of them are strong*
+![pic1](readmeImages/Both.png
+
 ## **Details of Individual Approach**
 My personal project is using audio to make animations. I mainly change properties such as the length, stroke weight, number of flowing lines, as well as the background grayscale. These values are related to certain audio values, including overall volume and some specific frequency energy values.
+I have combined the classical impressionism painting with the modern electronic music to create an interesting hybird interactive art.
 ## **Inspiration**
 My design inspiration comes from my computer wallpaper, which features music visualization. When music plays, this wallpaper displays a circular visualizer. It also changes color and vibrates with the bass. Therefore, I incorporated variables related to different frequency energy values in my project to create more interesting and varied changes.
 
@@ -21,6 +32,8 @@ Additionally, because we are creating post-impressionist works, Van Gogh's "Star
 ## **Technical Explanation**
 ### Retrieving Audio Information
 My design is based on group code files, incorporating audio and an analyzer. I used Fast Fourier Transform (FFT) to get the energy values in the high and low-frequency regions of the audio spectrum and used Amplitude to get the loudness value of the audio.
+
+*Get audio data*
 ```
   // Get audio data
   let volume = analyzer.getLevel();
@@ -32,6 +45,8 @@ My design is based on group code files, incorporating audio and an analyzer. I u
 ```
 ### Defining Line Properties
 In the initial team file, most line properties were predefined. I made many changes here by introducing global variables for line thickness, length, drawing grayscale, and the number of iterations in the drawing loop. It helps me to bring in Audio values to those values easily.
+
+*Add the audio analyzer values inside the line property values*
 ```
   // Adjust line properties based on audio data
   strokeweightBase = 3 * (1 + 4 * (lowFreq / 300) * (lowFreq / 300) * (lowFreq / 300));
