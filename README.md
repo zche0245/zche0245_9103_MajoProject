@@ -3,31 +3,33 @@
 - Before watching the work, make sure your device is not muted.
 - When you open and run this file, a dark background with the title "click to play" will appear in the center of the screen.
 - Click the left mouse button, and the project will start playing automatically. Click again to pause.
-  
+
 The flowing lines will change with the music: when the treble is strong, the lines will become longer; when the bass is strong, the lines will become thicker. Additionally, the overall volume will affect the visuals, making the background brighter or flickering as the volume changes, and the number of flowing lines will also vary with the volume.
 
 *when the bass is strong*
-![pic1](readmeImages/Bass.png
+![bass](readmeImages/Bass.png)
 
 *when the treble is strong*
-![pic1](readmeImages/Treble.png
+![treble](readmeImages/Treble.png)
 
 *when both of them are strong*
-![pic1](readmeImages/Both.png
+![both](readmeImages/Both.png)
 
 ## **Details of Individual Approach**
 My personal project is using audio to make animations. I mainly change properties such as the length, stroke weight, number of flowing lines, as well as the background grayscale. These values are related to certain audio values, including overall volume and some specific frequency energy values.
 I have combined the classical impressionism painting with the modern electronic music to create an interesting hybird interactive art.
+*when the bass is strong*
+![artwork](readmeImages/Claude_Monet,_Saint-Georges_majeur_au_crépuscule.jpg.png)
 ## **Inspiration**
 My design inspiration comes from my computer wallpaper, which features music visualization. When music plays, this wallpaper displays a circular visualizer. It also changes color and vibrates with the bass. Therefore, I incorporated variables related to different frequency energy values in my project to create more interesting and varied changes.
 
 *wallpaper from steam workshop* link: (https://steamcommunity.com/sharedfiles/filedetails/?id=1870674201)
-![pic1](readmeImages/wallpaper.png)
+![wallpaper](readmeImages/wallpaper.png)
 
 Additionally, because we are creating post-impressionist works, Van Gogh's "Starry Night" interactive app also inspired me. In my project, all flowing lines are carefully designed to replicate the direction of the artist's brush strokes.
 
 *"Starry Night" interactive app* link: (https://www.youtube.com/watch?v=Ph1SEFWcL58)
-![pic1](readmeImages/starrynight.png)
+![starrynight](readmeImages/starrynight.png)
 
 ## **Technical Explanation**
 ### Retrieving Audio Information
