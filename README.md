@@ -21,7 +21,27 @@ Additionally, because we are creating post-impressionist works, Van Gogh's "Star
 ## **Technical Explanation**
 ### Retrieving Audio Information
 My design is based on group code files, incorporating audio and an analyzer. I used Fast Fourier Transform (FFT) to get the energy values in the high and low-frequency regions of the audio spectrum and used Amplitude to get the loudness value of the audio.
+```
+  // Get audio data
+  let volume = analyzer.getLevel();
+  let spectrum = fft.analyze();
+  
+  // Get values for low and high frequencies
+  let lowFreq = fft.getEnergy(20, 200);
+  let highFreq = fft.getEnergy(4000, 20000);
+```
 ### Defining Line Properties
 In the initial team file, most line properties were predefined. I made many changes here by introducing global variables for line thickness, length, drawing grayscale, and the number of iterations in the drawing loop. It helps me to bring in Audio values to those values easily.
+```
+  // Adjust line properties based on audio data
+  strokeweightBase = 3 * (1 + 4 * (lowFreq / 300) * (lowFreq / 300) * (lowFreq / 300));
+  lengthBase = 5 * (1 + 3 * (highFreq / 30));
+  grayScale = 1400 * volume;
+  density = 10 + (200 * volume);
+  maxLines = 1000 + (10000 * volume);
+```
+
 ### Mouse Click to Play
-Added a mouse click function to control music playback and the display or disappearance of the playback prompt. My technical approach to audio analysis refers to the Week 11 tutorial.
+Added a mouse click function to control music playback and the display or disappearance of the playback prompt.
+
+**My technical approach to audio analysis mostly refers to the Week 11 tutorial.* link: (https://canvas.sydney.edu.au/courses/56592/pages/week-11-tutorial?module_item_id=2258248)
