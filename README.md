@@ -7,9 +7,11 @@
 The flowing lines will change with the music: when the treble is strong, the lines will become longer; when the bass is strong, the lines will become thicker. Additionally, the overall volume will affect the visuals, making the background brighter or flickering as the volume changes, and the number of flowing lines will also vary with the volume.
 
 *when the bass is strong*
+
 ![bass](readmeImages/Bass.png)
 
 *when the treble is strong*
+
 ![treble](readmeImages/Treble.png)
 
 *when both of them are strong*
@@ -19,7 +21,8 @@ The flowing lines will change with the music: when the treble is strong, the lin
 My personal project is using audio to make animations. I mainly change properties such as the length, stroke weight, number of flowing lines, as well as the background grayscale. These values are related to certain audio values, including overall volume and some specific frequency energy values.
 I have combined the classical impressionism painting with the modern electronic music to create an interesting hybird interactive art.
 *when the bass is strong*
-![artwork](readmeImages/Claude_Monet,_Saint-Georges_majeur_au_crépuscule.jpg.png)
+![artwork](readmeImages/Claude_Monet,_Saint-Georges_majeur_au_crépuscule.jpg)
+
 ## **Inspiration**
 My design inspiration comes from my computer wallpaper, which features music visualization. When music plays, this wallpaper displays a circular visualizer. It also changes color and vibrates with the bass. Therefore, I incorporated variables related to different frequency energy values in my project to create more interesting and varied changes.
 
