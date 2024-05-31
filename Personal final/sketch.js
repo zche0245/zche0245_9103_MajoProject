@@ -92,7 +92,7 @@ function draw() {
   maxLines = 1000 + (10000 * volume);
 
   // Draw static background
-  tint(grayScale, 10);
+  tint(grayScale, 40);
   image(backgroundBase, 0, 0, windowWidth, windowHeight);
 
   // Draw moving background
@@ -112,7 +112,7 @@ function draw() {
   }
 
   // Draw static tower
-  tint(grayScale, 50);
+  tint(grayScale, 40);
   image(towerBase, 0, 0, windowWidth, windowHeight);
   
   // Draw moving tower
