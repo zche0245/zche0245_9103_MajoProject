@@ -15,12 +15,14 @@ The flowing lines will change with the music: when the treble is strong, the lin
 ![treble](readmeImages/Treble.png)
 
 *when both of them are strong*
+
 ![both](readmeImages/Both.png)
 
 ## **Details of Individual Approach**
 My personal project is using audio to make animations. I mainly change properties such as the length, stroke weight, number of flowing lines, as well as the background grayscale. These values are related to certain audio values, including overall volume and some specific frequency energy values.
 I have combined the classical impressionism painting with the modern electronic music to create an interesting hybird interactive art.
-*when the bass is strong*
+
+*Saint Georges majeur au crépuscule* from *Claude Monet*
 ![artwork](readmeImages/Claude_Monet,_Saint-Georges_majeur_au_crépuscule.jpg)
 
 ## **Inspiration**
